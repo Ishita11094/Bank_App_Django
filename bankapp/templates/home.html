@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Home {% endblock %}
+
+{% block content %}
+
+<h1> Home Page </h1>
+<img src="{% static 'images/spark_bank.png' %}" width="1300" height="600">
+<br>
+<a href="{% url 'create' %}"><input type="image" src="{% static 'images/user.png' %}" width="300" height="300" class="b1" style="margin: 100px 100px 100px 100px;"></a>
+<a href="{% url 'transfer' %}"><img src="{% static 'images/transfer2.gif' %}" alt="transfer"  width="250" style="margin: 100px 100px 100px 100px;" /></a>
+<br><br><br><br><br><br>
+
+{% endblock %}
